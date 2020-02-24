@@ -1,62 +1,82 @@
+/* All * styling applied to the entire page except where higher specificity is present. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
 }
 
+/* Background color for the page. */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* Styling for the header section overall. */
+header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    height: auto;
 }
 
-.header h1 {
+/* Styling for the main title/the company name. */
+h1 {
     display: inline-block;
     font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.header h1 .seo {
+.seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* Styling for the navigation area. */
+nav {
     padding-top: 15px;
+    font-size: 20px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
 }
 
-.header div ul {
+ul {
     list-style-type: none;
 }
 
-.header div ul li {
+li {
     display: inline-block;
     margin-left: 25px;
 }
 
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+/* Styling for the background image. */
+.hero {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
 }
 
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+/* Styling for the main content section of the page. */
+section {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: #0072bb;
+    min-height: 300px;
+}
+
+/* Styling for the images in the main content section. */
+.content img {
+    max-height: 200px;
+    height: auto;
+    width: 30%;
 }
 
 .float-left {
@@ -68,133 +88,57 @@ p {
     float: right;
     margin-left: 25px;
 }
+/* End of the styling for the images in the main content section. */
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-.benefits {
+/* Styling for the paragraphs in the main content section and aside area. */
+p {
+    font-size: 16px;
+}
+/* End of the styling for the main content section. */
+
+/* Styling for the aside element area. */
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
     float: right;
     width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Styling for the images in the aside area. */
+.benefit img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
+    height: auto;
 }
+/* End of the styling for the aside area. */
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* Styling for the footer area. */
+footer {
     padding: 30px;
     clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
-    font-size: 20px;
+footer h3,
+footer p {
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* End of the styling for the footer area. */

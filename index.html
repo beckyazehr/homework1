@@ -3,14 +3,18 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!--Browser page title reflecting what page is being visited.-->
+    <title>Horiseon | Homepage</title>
 </head>
 
 <body>
-    <div class="header">
+    <!--Header area with navigation links to the main section/content of the page.-->
+    <header>
+        <!--Company name/logo.-->
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
+        <!--Navigation links displayed in unordered list.-->
+        <nav>
             <ul>
                 <li>
                     <a href="#search-engine-optimization">Search Engine Optimization</a>
@@ -22,61 +26,94 @@
                     <a href="#social-media-marketing">Social Media Marketing</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <div class="hero"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        </nav>
+    </header>
+    <!--Background image used on the page.-->
+    <figure>
+        <img src="./assets/images/digital-marketing-meeting.jpg" class="hero" alt="Image depicting 4 people have a meeting 
+            around a table regarding social media">
+    </figure>
+    <!--Main content of the page.-->
+    <section>
+        <!--Search Engine Optimization area with image and description.-->
+        <div id="search-engine-optimization" class="content">
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" alt="An image containing a laptop with a magnifying glass in the top left, a full cup of coffee on 
+                    a saucer in the bottom left, a notebook in the center opened to a page detailing Search Engine 
+                    Optimization tools (Backlink, Content, Headings, Mobile Compatibility, Social Media, and Link Building),
+                    also in the top right is a cup contianing markers and pencils">
             <h2>Search Engine Optimization</h2>
             <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                The dominance of mobile internet use means that users are searching for the right business as they
+                travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
+                your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+        <!--Online Reputation Management area with image and description.-->
+        <div id="online-reputation-management" class="content">
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right" alt="An image with a man 
+                sitting at a laptop with the screen depicting a graph that shows increasing reputation with bars.">
             <h2>Online Reputation Management</h2>
             <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an
+                internet connection to say whatever they want about your business. Online Reputation Management
+                gives
+                you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+        <!--Social Media Marketing area with image and description.-->
+        <div id="social-media-marketing" class="content">
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left"
+                alt="An image with many people 
+                sitting around a table with many images on the table that make it clear the people are discussing social media.">
             <h2>Social Media Marketing</h2>
             <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps
+                you
+                determine which platforms are suited to your brand, using analytics to find the right markets and
+                increase your lead generation.
             </p>
         </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+    </section>
+    <!--Aside with additional information related to main content.-->
+    <aside>
+        <!--Lead Generation area with image and description.-->
+        <div class="benefit">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <img src="./assets/images/lead-generation.png" alt="A black outline image of half a gear at the top with a 
+                funnel underneath that contains a down pointing arrow that is pointed at a dollar sign.">
             <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+                Inbound strategies for lead generation require less work for your business, bringing customers
+                directly to your website.
             </p>
         </div>
-        <div class="benefit-brand">
+        <!--Brand Awareness area with image and description.-->
+        <div class="benefit">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <img src="./assets/images/brand-awareness.png" alt="A black outline image depicting the upper body of a 
+                human with a lightbulb as a head.">
             <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+                Users find your business through paid and organic searches, increasing the search ranking and
+                visibility for your business.
             </p>
         </div>
-        <div class="benefit-cost">
+        <!--Cost Management area with image and description.-->
+        <div class="benefit">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
+            <img src="./assets/images/cost-management.png" alt="A black outline image of a gear that is covered on the 
+                bottom half with three dollar signs.">
             <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+                As the search ranking for your business increases, your advertising costs decrease, and you no
+                longer need to advertise your page.
             </p>
         </div>
-    </div>
-    <div class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
-    </div>
+    </aside>
+    <!--Footer with who page was made by and copywritten legal entity name.-->
+    <footer>
+        <h3>Made with ❤️️ by Horiseon</h2>
+            <p>
+                &copy; 2019 Horiseon Social Solution Services, Inc.
+            </p>
+    </footer>
 </body>
 
 </html>
